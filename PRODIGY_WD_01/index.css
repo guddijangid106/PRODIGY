@@ -1,0 +1,366 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    color: #333; /* Dark grey for better readability */
+    font-family: 'Roboto', sans-serif; /* Updated font */
+}
+
+/* Navigation Styles */
+nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5%;
+    background-color: #4CAF50; /* Slightly darker green for a professional look */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav .heading {
+    font-size: 24px; /* Adjusted for a more balanced look */
+    font-weight: 700;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: 0.2s ease-in;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 16px; /* Adjusted for a more professional look */
+    font-weight: 500;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: #388E3C; /* Darker green on hover */
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+nav .sideMenuButton {
+    font-size: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+    display: none;
+}
+
+/* Responsive Navbar */
+@media screen and (max-width: 600px) {
+    nav .sideMenuButton {
+        display: flex;
+    }
+
+    nav .navbar {
+        display: none;
+    }
+
+    .sideNavigationBar {
+        display: block !important;
+    }
+}
+
+.sideNavigationBar {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #4CAF50; /* Consistent with navigation */
+    overflow-x: hidden;
+    transition: 0.3s ease-in;
+    padding-top: 60px;
+    display: none;
+}
+
+.sideNavigationBar a {
+    padding: 8px 8px 8px 40px;
+    display: block;
+    font-size: 18px; /* Adjusted for consistency */
+    font-weight: 500;
+    color: #d1d1d1;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.sideNavigationBar a button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #4CAF50; /* Consistent with navigation */
+    font-size: 16px;
+    border-style: none;
+    font-weight: 700;
+}
+
+.sideNavigationBar a:hover {
+    color: white;
+}
+
+.sideNavigationBar .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 20px;
+}
+
+/* Header Section */
+.line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 120px 5% 0; /* Adjusted margin for spacing */
+}
+
+.line .side1 {
+    padding-right: 50px;
+}
+
+.side1 h1 {
+    font-size: 48px; /* Adjusted font size for a more balanced header */
+    margin-bottom: 10px;
+    color: #2E7D32; /* Darker green for a professional appearance */
+}
+
+.side1 button {
+    width: 200px;
+    padding: 12px 20px;
+    border-radius: 20px;
+    border-style: none;
+    color: black;
+    font-size: 16px; /* Adjusted font size */
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Header Content Responsive */
+@media screen and (max-width: 980px) {
+    .line .side1 h1 {
+        font-size: 40px;
+    }
+
+    .line {
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .line {
+        flex-direction: column;
+        margin-top: 150px; /* Adjusted for mobile spacing */
+    }
+
+    .line .side1 {
+        padding: 30px;
+    }
+
+    .side1 h1 {
+        font-size: 35px;
+    }
+}
+
+/* Books Section */
+.books .content {
+    padding: 20px;
+}
+
+.books .title {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 36px; /* Adjusted for a refined look */
+    margin-bottom: 30px;
+}
+
+.books .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.books .box {
+    width: calc(100% / 2 - 20px);
+    margin: 10px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    background-color: #f4f4f4;
+}
+
+.box-title {
+    background-color: #4CAF50; /* Consistent with navigation */
+    color: white;
+    padding: 10px;
+    font-size: 20px; /* Adjusted for consistency */
+    text-align: center;
+}
+
+.box-content {
+    padding: 20px;
+    color: #333;
+}
+
+@media screen and (max-width: 800px) {
+    .books .box {
+        width: calc(100% - 20px);
+    }
+}
+
+/* About Section */
+.about .content {
+    padding: 20px;
+}
+
+.about .title {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 36px; /* Consistent with the books section */
+    margin-bottom: 30px;
+}
+
+.about .description {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Contact Page */
+.contact {
+    padding: 20px;
+}
+
+.contact .content {
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.content .title {
+    width: 80%;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 36px; /* Consistent with other sections */
+}
+
+.contactMenu {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.input2 {
+    margin-top: 10px;
+}
+
+.label1 {
+    font-size: 16px; /* Adjusted for a more refined look */
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-weight: bolder;
+}
+
+.contactMenu .input1 input, .input2 textarea {
+    width: 100%; /* Full width for better layout */
+    border-radius: 13px;
+    padding: 6px;
+    border-color: rgb(252, 244, 244);
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+.button {
+    margin-top: 12px;
+    margin-left: 5px;
+}
+
+.button button {
+    width: 162px;
+    height: 35px;
+    border-radius: 12px;
+    border-color: transparent;
+}
+
+.button button:hover {
+    background-color: #4CAF50; /* Consistent with navigation */
+}
+
+button {
+    width: 162px;
+    height: 35px;
+    border-radius: 12px;
+    border-color: transparent;
+}
+
+button:hover {
+    background-color: #4CAF50; /* Consistent with navigation */
+}
+
+/* Footer */
+footer {
+    background: #4CAF50; /* Consistent with navigation */
+    padding: 15px 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif; /* Updated font */
+}
+
+footer .footer span {
+    font-size: 15px; /* Slightly smaller for a professional appearance */
+    font-weight: 400;
+    color: white;
+}
+
+footer .footer span a {
+    font-weight: 500;
+    color: white;
+}
+
+footer .footer span a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1060px) {
+    .contactMenu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rightside1 {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+
+    .content1 {
+        width: 100%;
+        margin-top: 2px;
+        color: grey;
+    }
+}
+
+
+
+    

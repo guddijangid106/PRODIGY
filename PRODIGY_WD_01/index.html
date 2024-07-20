@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Landing Page</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="heading">Book Haven</div>
+        <span class="sideMenuButton" onclick="openNavbar()">&#9776</span>
+
+        <div class="navbar">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Books">Books</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Side navigation bar for responsive website -->
+    <div class="sideNavigationBar" id="sideNavigationBar">
+        <a href="#" class="closeButton" onclick="closeNavbar()">&#x274C</a>
+        <a href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#Books">Books</a>
+        <a href="#Contact">Contact</a>
+    </div>
+
+    <!-- Content -->
+    <div class="line" id="Home">
+        <div class="side1">
+            <h1>Welcome to Book Haven</h1>
+            <button>
+                <a href="https://www.example.com">Explore</a>
+            </button>
+        </div>
+    </div>
+
+    <section class="about" id="About">
+        <div class="content">
+            <div class="title">
+                <span>About Us</span>
+            </div>
+            <div class="description">
+                <p>
+                    Welcome to Book Haven, your ultimate destination for discovering a diverse collection of books. 
+                    
+                </p>
+                <p>
+                    Our platform offers a rich selection of genres, including fiction, non-fiction, mystery, romance, science fiction, and much more. 
+                </p>
+
+                <p>
+                    We are committed to providing book enthusiasts with an unparalleled reading experience. Explore our carefully curated collections, engage with reviews, and find your next great read with us.
+                </p>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="books" id="Books">
+        <div class="content">
+            <div class="title">
+                <span>Book Categories</span>
+            </div>
+            <div class="boxes">
+                <div class="box">
+                    <div class="box-title">
+                        <span>Fiction</span>
+                    </div>
+                    <div class="box-content">
+                        <p>
+                            Fiction books are works of the imagination. They tell stories that are created by the author, featuring characters and events that are not real. Enjoy an array of genres like literary fiction, historical fiction, and fantasy.
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-title">
+                        <span>Non-Fiction</span>
+                    </div>
+                    <div class="box-content">
+                        <p>
+                            Non-fiction books are based on real events and factual information. They include biographies, memoirs, self-help books, and more. These books provide insights into real-world topics and true stories.
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-title">
+                        <span>Science Fiction</span>
+                    </div>
+                    <div class="box-content">
+                        <p>
+                            Science fiction explores futuristic concepts, advanced technologies, and otherworldly settings. Dive into imaginative worlds where science and technology play a central role in the storyline.
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-title">
+                        <span>Mystery</span>
+                    </div>
+                    <div class="box-content">
+                        <p>
+                            Mystery books involve solving puzzles, crimes, or uncovering secrets. Enjoy thrilling narratives filled with suspense and intrigue as detectives and amateur sleuths unravel complex plots.
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-title">
+                        <span>Romance</span>
+                    </div>
+                    <div class="box-content">
+                        <p>
+                            Romance novels focus on relationships and love stories. Explore diverse tales of passion, heartache, and the journey of finding love through various romantic scenarios.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="Contact">
+        <div class="content">
+            <div class="title"><span>Contact Us</span></div>
+            <div class="contactMenu">
+                <div class="input1">
+                    <div class="label1">Your Name</div>
+                    <div class="input2">
+                        <input type="text" placeholder="Enter your Name here">
+                    </div>
+                    <div class="label1">
+                        <label>Your Email</label>
+                    </div>
+                    <div class="input2">
+                        <input type="text" placeholder="Enter your Email here">
+                    </div>
+                    <div class="label1">
+                        <label>Your Message</label>
+                    </div>
+                    <div class="input2">
+                        <textarea placeholder="Enter your Message here"></textarea>
+                    </div>
+                    <div class="button">
+                        <button>Send Message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+        <div class="footer">
+            <span>
+                Created By <a href="https://www.example.com" target="_blank">Book Haven</a>
+            </span>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
